@@ -17,6 +17,11 @@ import { useLanguage } from "@/components/LanguageContext";
 
 export default function ContactSection() {
   const { t, isRTL } = useLanguage();
+  const mapsQuery = encodeURIComponent(
+    isRTL ? 'ארץ חפץ 102, ירושלים, ישראל' : 'Eretz Hefetz 102, Jerusalem, Israel'
+  );
+  const mapsEmbedUrl = `https://maps.google.com/maps?q=${mapsQuery}&hl=${isRTL ? 'iw' : 'en'}&z=16&output=embed`;
+  const mapsLinkUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -237,9 +242,7 @@ export default function ContactSection() {
                   />
                 </div>
                 
-                <
-// @ts-ignore
-                Button 
+                <Button 
                   type="submit" 
                   className="w-full bg-mishlav-orange hover:bg-orange-600 text-white py-6 text-lg font-heebo focus:ring-4 focus:ring-mishlav-orange focus:ring-offset-2 shadow-lg shadow-orange-500/20"
                   disabled={isSubmitting}
@@ -301,7 +304,14 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-sm text-blue-200 font-heebo mb-1">{t('contact.address')}</h4>
-                    <p className="text-lg text-white font-heebo">{t('contact.addressValue')}</p>
+                    <a
+                      href={mapsLinkUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lg text-white font-heebo hover:text-mishlav-orange transition-colors"
+                    >
+                      {t('contact.addressValue')}
+                    </a>
                   </div>
                 </div>
                 
@@ -321,7 +331,7 @@ export default function ContactSection() {
             
             <div className="rounded-3xl overflow-hidden shadow-xl h-[280px] border-4 border-white ring-1 ring-gray-100">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.2966!2d35.197556!3d31.778122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDQ2JzQxLjIiTiAzNcKwMTEnNTEuMiJF!5e0!3m2!1siw!2sil!4v1699192285315!5m2!1siw!2sil" 
+                src={mapsEmbedUrl}
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
