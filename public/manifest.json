@@ -1,0 +1,17 @@
+{
+  "name": "מישלב - מרכז שירות לאפוטרופסות בטוחה",
+  "short_name": "מישלב",
+  "description": "שירותי אפוטרופסות מקצועיים ואיכותיים",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b3b5b",
+  "theme_color": "#0b3b5b",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

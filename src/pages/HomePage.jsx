@@ -51,7 +51,7 @@ export default function HomePage() {
       "name": "מישלב - עמותת אפוטרופסות",
       "alternateName": "Mishlav - Guardianship Association",
       "url": window.location.origin,
-      "logo": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/5ff176_1.png",
+      "logo": "https://mishlav.co/logo.png",
       "description": "עמותת מישלב מספקת שירותי אפוטרופסות מקצועיים לאנשים הזקוקים להגנה וייצוג משפטי",
       "address": {
         "@type": "PostalAddress",

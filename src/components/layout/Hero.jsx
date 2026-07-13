@@ -62,7 +62,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-mishlav-orange/20 rounded-3xl blur-2xl" aria-hidden="true"></div>
             <div className="relative w-44 h-44 md:w-56 md:h-56 rounded-3xl overflow-hidden bg-white p-5 shadow-2xl ring-4 ring-white/20">
               <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/5ff176_1.png" 
+                src="/logo.png" 
                 alt={t('accessibility.logoAlt')}
                 className="w-full h-full object-contain"
               />

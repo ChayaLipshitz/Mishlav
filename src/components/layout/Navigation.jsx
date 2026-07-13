@@ -52,7 +52,7 @@ export default function Navigation() {
             aria-label={t('accessibility.logoAlt')}
           >
             <img
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/5ff176_1.png"
+              src="/logo.png"
               alt={t('accessibility.logoAlt')}
               className="w-12 h-12 object-contain"
             />

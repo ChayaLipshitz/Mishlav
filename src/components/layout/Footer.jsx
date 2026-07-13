@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="w-14 h-14 rounded-2xl overflow-hidden bg-white p-2 shadow-lg">
                 <img 
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/5ff176_1.png" 
+                  src="/logo.png" 
                   alt={t('accessibility.logoAlt')}
                   className="w-full h-full object-contain"
                 />
